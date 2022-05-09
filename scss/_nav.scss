@@ -1,0 +1,126 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+
+  @media screen and (max-width: 768px) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: 100%;
+    min-height: 100vh;
+    background: $dark url("../img/icons/nav-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 100px center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: $transition;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: rem(30);
+    row-gap: rem(20);
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      align-items: start;
+      flex-grow: 1;
+      row-gap: rem(30);
+      min-height: 100vh;
+      backdrop-filter: blur(30px);
+      padding: 140px 20px 35px;
+    }
+
+    @media screen and (max-width: 575px) {
+      padding: 120px 20px 35px;
+    }
+  }
+
+  &__link {
+    font-size: rem(16);
+    line-height: divider(18, 16);
+    color: $white;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 768px) {
+      font-weight: bold;
+      font-size: rem(24);
+      line-height: divider(28, 24);
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(4);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  height: 32px;
+  width: 32px;
+  transition: $transition;
+
+  &:hover {
+    border-color: $red;
+  }
+
+  &.active {
+    span:nth-child(1) {
+      transform: translate(4px, -2px) rotate(45deg);
+      transform-origin: left top;
+    }
+
+    span:nth-child(2) {
+      transform: translateX(-20px);
+      background: transparent;
+    }
+
+    span:nth-child(3) {
+      transform: translate(-3px, -14px) rotate(-45deg);
+      transform-origin: right bottom;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    display: inline-flex;
+  }
+
+  span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: $white;
+    border-radius: 6px;
+    transition: $transition;
+  }
+}

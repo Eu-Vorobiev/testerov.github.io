@@ -1,0 +1,23 @@
+.social {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: rem(15);
+
+    @media screen and (max-width: 575px) {
+      gap: rem(12);
+    }
+  }
+
+  &__link {
+    svg {
+      transition: $transition;
+    }
+
+    &:hover {
+      svg {
+        transform: translate(4px, -5px);
+      }
+    }
+  }
+}

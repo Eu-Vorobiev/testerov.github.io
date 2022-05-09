@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,regular,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo header__logo" href="index.html">
+        <img src="img/icons/logo-ico.svg" alt="test">
+      </a>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#hero">Home</a></li>
+          <li class="nav__item"><a class="nav__link" href="#partners">Our partners</a></li>
+          <li class="nav__item"><a class="nav__link" href="#team">Our team</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact us</a></li>
+        </ul>
+        <!-- /.nav__list -->
+        <div class="nav__footer">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.5 23.75H23.75V6.25H6.25V23.75H15V17.5H12.5V15H15V12.9325C15 11.2612 15.175 10.655 15.5 10.0437C15.8201 9.43898 16.315 8.94461 16.92 8.625C17.3975 8.36875 17.9912 8.215 19.0287 8.14875C19.44 8.1225 19.9725 8.155 20.6262 8.24875V10.6237H20C18.8538 10.6237 18.38 10.6775 18.0975 10.8288C17.9289 10.9154 17.7917 11.0527 17.705 11.2213C17.555 11.5038 17.5 11.7838 17.5 12.9313V15H20.625L20 17.5H17.5V23.75ZM5 3.75H25C25.3315 3.75 25.6495 3.8817 25.8839 4.11612C26.1183 4.35054 26.25 4.66848 26.25 5V25C26.25 25.3315 26.1183 25.6495 25.8839 25.8839C25.6495 26.1183 25.3315 26.25 25 26.25H5C4.66848 26.25 4.35054 26.1183 4.11612 25.8839C3.8817 25.6495 3.75 25.3315 3.75 25V5C3.75 4.66848 3.8817 4.35054 4.11612 4.11612C4.35054 3.8817 4.66848 3.75 5 3.75V3.75Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.125 6.93752C18.175 6.93736 17.2629 7.31017 16.5849 7.97573C15.907 8.64129 15.5174 9.54639 15.5 10.4963L15.465 12.465C15.463 12.5707 15.4386 12.6748 15.3935 12.7704C15.3484 12.866 15.2836 12.9511 15.2033 13.0199C15.1231 13.0887 15.0292 13.1398 14.9278 13.1697C14.8264 13.1997 14.7198 13.2079 14.615 13.1938L12.6638 12.9288C10.0963 12.5788 7.63627 11.3963 5.27627 9.43002C4.52877 13.5675 5.98877 16.4338 9.50502 18.645L11.6888 20.0175C11.7925 20.0827 11.8787 20.1724 11.9398 20.2786C12.0009 20.3848 12.0351 20.5044 12.0393 20.6269C12.0435 20.7493 12.0176 20.871 11.9639 20.9811C11.9102 21.0913 11.8303 21.1866 11.7313 21.2588L9.74127 22.7125C10.925 22.7863 12.0488 22.7338 12.9813 22.5488C18.8788 21.3713 22.8 16.9338 22.8 9.61377C22.8 9.01627 21.535 6.93752 19.125 6.93752ZM13 10.45C13.0218 9.24508 13.3986 8.07336 14.0832 7.08155C14.7678 6.08974 15.7298 5.32192 16.8487 4.87423C17.9676 4.42654 19.1937 4.31887 20.3735 4.56471C21.5532 4.81054 22.6343 5.39895 23.4813 6.25627C24.37 6.25002 25.1263 6.47502 26.8175 5.45002C26.3988 7.50002 26.1925 8.39002 25.3 9.61377C25.3 19.1663 19.4288 23.8113 13.4713 25C9.38627 25.815 3.44627 24.4763 1.74377 22.6988C2.61127 22.6313 6.13627 22.2525 8.17377 20.7613C6.45002 19.625 -0.411226 15.5875 4.09752 4.73252C6.21377 7.20377 8.36002 8.88627 10.535 9.77877C11.9825 10.3725 12.3375 10.36 13.0013 10.4513L13 10.45Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 3.75H25C25.3315 3.75 25.6495 3.8817 25.8839 4.11612C26.1183 4.35054 26.25 4.66848 26.25 5V25C26.25 25.3315 26.1183 25.6495 25.8839 25.8839C25.6495 26.1183 25.3315 26.25 25 26.25H5C4.66848 26.25 4.35054 26.1183 4.11612 25.8839C3.8817 25.6495 3.75 25.3315 3.75 25V5C3.75 4.66848 3.8817 4.35054 4.11612 4.11612C4.35054 3.8817 4.66848 3.75 5 3.75V3.75ZM6.25 6.25V23.75H23.75V6.25H6.25ZM9.375 11.25C8.87772 11.25 8.40081 11.0525 8.04917 10.7008C7.69754 10.3492 7.5 9.87228 7.5 9.375C7.5 8.87772 7.69754 8.40081 8.04917 8.04917C8.40081 7.69754 8.87772 7.5 9.375 7.5C9.87228 7.5 10.3492 7.69754 10.7008 8.04917C11.0525 8.40081 11.25 8.87772 11.25 9.375C11.25 9.87228 11.0525 10.3492 10.7008 10.7008C10.3492 11.0525 9.87228 11.25 9.375 11.25V11.25ZM8.125 12.5H10.625V21.875H8.125V12.5ZM15 13.0375C15.73 12.3313 16.5825 11.875 17.5 11.875C20.0888 11.875 21.875 13.9737 21.875 16.5625V21.875H19.375V16.5625C19.375 15.9823 19.1445 15.4259 18.7343 15.0157C18.3241 14.6055 17.7677 14.375 17.1875 14.375C16.6073 14.375 16.0509 14.6055 15.6407 15.0157C15.2305 15.4259 15 15.9823 15 16.5625V21.875H12.5V12.5H15V13.0375Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 11.25C14.0054 11.25 13.0516 11.6451 12.3483 12.3483C11.6451 13.0516 11.25 14.0054 11.25 15C11.25 15.9946 11.6451 16.9484 12.3483 17.6517C13.0516 18.3549 14.0054 18.75 15 18.75C15.9946 18.75 16.9484 18.3549 17.6517 17.6517C18.3549 16.9484 18.75 15.9946 18.75 15C18.75 14.0054 18.3549 13.0516 17.6517 12.3483C16.9484 11.6451 15.9946 11.25 15 11.25ZM15 8.75C16.6576 8.75 18.2473 9.40848 19.4194 10.5806C20.5915 11.7527 21.25 13.3424 21.25 15C21.25 16.6576 20.5915 18.2473 19.4194 19.4194C18.2473 20.5915 16.6576 21.25 15 21.25C13.3424 21.25 11.7527 20.5915 10.5806 19.4194C9.40848 18.2473 8.75 16.6576 8.75 15C8.75 13.3424 9.40848 11.7527 10.5806 10.5806C11.7527 9.40848 13.3424 8.75 15 8.75ZM23.125 8.4375C23.125 8.8519 22.9604 9.24933 22.6674 9.54235C22.3743 9.83538 21.9769 10 21.5625 10C21.1481 10 20.7507 9.83538 20.4576 9.54235C20.1646 9.24933 20 8.8519 20 8.4375C20 8.0231 20.1646 7.62567 20.4576 7.33265C20.7507 7.03962 21.1481 6.875 21.5625 6.875C21.9769 6.875 22.3743 7.03962 22.6674 7.33265C22.9604 7.62567 23.125 8.0231 23.125 8.4375ZM15 5C11.9075 5 11.4025 5.00875 9.96375 5.0725C8.98375 5.11875 8.32625 5.25 7.71625 5.4875C7.17375 5.6975 6.7825 5.94875 6.36625 6.36625C5.97501 6.74425 5.67419 7.20573 5.48625 7.71625C5.24875 8.32875 5.1175 8.985 5.0725 9.96375C5.0075 11.3438 5 11.8263 5 15C5 18.0925 5.00875 18.5975 5.0725 20.0362C5.11875 21.015 5.25 21.6737 5.48625 22.2825C5.69875 22.8263 5.94875 23.2175 6.36375 23.6325C6.785 24.0525 7.17625 24.3037 7.71375 24.5112C8.33125 24.75 8.98875 24.8825 9.96375 24.9275C11.3438 24.9925 11.8263 25 15 25C18.0925 25 18.5975 24.9912 20.0362 24.9275C21.0138 24.8812 21.6725 24.75 22.2825 24.5138C22.8237 24.3025 23.2175 24.0513 23.6325 23.6362C24.0538 23.215 24.305 22.8238 24.5125 22.2863C24.75 21.67 24.8825 21.0112 24.9275 20.0362C24.9925 18.6562 25 18.1737 25 15C25 11.9075 24.9912 11.4025 24.9275 9.96375C24.8812 8.98625 24.75 8.32625 24.5125 7.71625C24.3241 7.20625 24.0238 6.74495 23.6337 6.36625C23.2559 5.97481 22.7944 5.67396 22.2837 5.48625C21.6712 5.24875 21.0138 5.1175 20.0362 5.0725C18.6562 5.0075 18.1737 5 15 5ZM15 2.5C18.3962 2.5 18.82 2.5125 20.1525 2.575C21.4837 2.6375 22.39 2.84625 23.1875 3.15625C24.0125 3.47375 24.7075 3.90375 25.4025 4.5975C26.0381 5.22237 26.5299 5.97824 26.8438 6.8125C27.1525 7.60875 27.3625 8.51625 27.425 9.8475C27.4838 11.18 27.5 11.6038 27.5 15C27.5 18.3962 27.4875 18.82 27.425 20.1525C27.3625 21.4837 27.1525 22.39 26.8438 23.1875C26.5308 24.0222 26.0389 24.7783 25.4025 25.4025C24.7775 26.0379 24.0216 26.5297 23.1875 26.8438C22.3912 27.1525 21.4837 27.3625 20.1525 27.425C18.82 27.4838 18.3962 27.5 15 27.5C11.6038 27.5 11.18 27.4875 9.8475 27.425C8.51625 27.3625 7.61 27.1525 6.8125 26.8438C5.97791 26.5306 5.22191 26.0387 4.5975 25.4025C3.96176 24.7777 3.46991 24.0218 3.15625 23.1875C2.84625 22.3912 2.6375 21.4837 2.575 20.1525C2.51625 18.82 2.5 18.3962 2.5 15C2.5 11.6038 2.5125 11.18 2.575 9.8475C2.6375 8.515 2.84625 7.61 3.15625 6.8125C3.46905 5.97772 3.961 5.22165 4.5975 4.5975C5.22209 3.96154 5.97804 3.46966 6.8125 3.15625C7.61 2.84625 8.515 2.6375 9.8475 2.575C11.18 2.51625 11.6038 2.5 15 2.5Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="header__privacy privacy" href="#">Privacy Policy</a>
+        </div>
+        <!-- /.nav__footer -->
+      </nav>
+      <!-- /.nav header__nav -->
+      <button class="menu-btn" id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <!-- /.container header__container -->
+  </header>
+  <!-- /.header -->
+
+  <main class="main">
+
+    <section class="hero" id="hero">
+      <div class="container hero__container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">Email marceting for fast-growing startups</h1>
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id ut cursus dictum purus
+              enim
+              in in urna, suspendisse. Mauris, mollis sed sed ac.</p>
+            <div class="hero__actions">
+              <button class="btn hero__btn" type="button">Start now</button>
+              <a class="btn btn--transparent hero__link" href="#">read more</a>
+            </div>
+          </div>
+          <img class="circle" src="img/hero/circle.svg" alt="circle">
+        </div>
+        <img class="cross" src="img/hero/cross.svg" alt="cross">
+      </div>
+      <img class="circle-blank" src="img/hero/circle-blank.svg" alt="circle-blank">
+      <!-- /.container hero__container -->
+    </section>
+    <!-- /#hero.hero -->
+
+    <section class="partners" id="partners">
+      <div class="container partners__container">
+        <h2 class="section__title partners__title section__title--mb">Our partners</h2>
+        <div class="partners__wrapper tab">
+          <div class="partners__banner tab__pages">
+            <div class="partners__card tab__content">
+              <div class="partners__card-header">
+                <img class="partners__card-photo" src="img/partners/partners-author.jpg" alt="author">
+                <div class="partners__card-author">
+                  <h3 class="partners__card-name">Tom Dou</h3>
+                  <span class="partners__card-proff">Front-End</span>
+                </div>
+              </div>
+              <div class="partners__card-body">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit.”</div>
+            </div>
+            <div class="partners__card tab__content">
+              <div class="partners__card-header">
+                <img class="partners__card-photo" src="img/partners/partners-author.jpg" alt="author">
+                <div class="partners__card-author">
+                  <h3 class="partners__card-name">Tom Bou</h3>
+                  <span class="partners__card-proff">Back-End</span>
+                </div>
+              </div>
+              <div class="partners__card-body">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</div>
+            </div>
+            <div class="partners__card tab__content">
+              <div class="partners__card-header">
+                <img class="partners__card-photo" src="img/partners/partners-author.jpg" alt="author">
+                <div class="partners__card-author">
+                  <h3 class="partners__card-name">Tom Dou</h3>
+                  <span class="partners__card-proff">Front-End</span>
+                </div>
+              </div>
+              <div class="partners__card-body">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</div>
+            </div>
+            <div class="partners__card tab__content">
+              <div class="partners__card-header">
+                <img class="partners__card-photo" src="img/partners/partners-author.jpg" alt="author">
+                <div class="partners__card-author">
+                  <h3 class="partners__card-name">Tom Bou</h3>
+                  <span class="partners__card-proff">Back-End</span>
+                </div>
+              </div>
+              <div class="partners__card-body">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</div>
+            </div>
+            <div class="partners__card tab__content">
+              <div class="partners__card-header">
+                <img class="partners__card-photo" src="img/partners/partners-author.jpg" alt="author">
+                <div class="partners__card-author">
+                  <h3 class="partners__card-name">Tom Dou</h3>
+                  <span class="partners__card-proff">Front-End</span>
+                </div>
+              </div>
+              <div class="partners__card-body">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</div>
+            </div>
+            <div class="partners__card tab__content">
+              <div class="partners__card-header">
+                <img class="partners__card-photo" src="img/partners/partners-author.jpg" alt="author">
+                <div class="partners__card-author">
+                  <h3 class="partners__card-name">Tom Bou</h3>
+                  <span class="partners__card-proff">Back-End</span>
+                </div>
+              </div>
+              <div class="partners__card-body">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium. At pretium id
+                viverra interdum nam odio ultricies. Diam leo, sed neque dui pulvinar condimentum pretium.”</div>
+            </div>
+          </div>
+          <ul class="partners__box tab__main">
+            <li class="partners__item tab__item tab__item--active" data-tabindex="1">
+              <img src="img/partners/stl-part.png" alt="partner1">
+            </li>
+            <li class="partners__item tab__item" data-tabindex="2">
+              <img src="img/partners/breck-fartners.png" alt="partner2">
+            </li>
+            <li class="partners__item tab__item" data-tabindex="3">
+              <img src="img/partners/sunstone.png" alt="partner3">
+            </li>
+            <li class="partners__item tab__item" data-tabindex="4">
+              <img src="img/partners/athena.png" alt="partner4">
+            </li>
+            <li class="partners__item tab__item" data-tabindex="5">
+              <img src="img/partners/the-chord-company.png" alt="partner5">
+            </li>
+            <li class="partners__item tab__item" data-tabindex="6">
+              <img src="img/partners/freshly.png" alt="partner6">
+            </li>
+          </ul>
+        </div>
+        <!-- /.partners__wrapper tabs -->
+      </div>
+      <!-- /.container partners__container -->
+    </section>
+    <!-- /#partners.partners -->
+
+    <section class="team" id="team">
+      <div class="container team__container">
+        <img class="team__ico team__ico--bottom" src="img/team/cross1.svg" alt="cross 1">
+        <img class="team__ico team__ico--right" src="img/team/cross1.svg" alt="cross 1">
+        <h2 class="section__title team__title">Our Team</h2>
+        <div class="team__wrapper">
+          <form class="radio team__radio" action="#">
+            <div class="form__radio-btn radio-btn">
+              <input id="radio1" type="radio" name="radio" value="1" checked>
+              <label class="btn" for="radio1"><span>Team 1</span></label>
+            </div>
+            <div class="form__radio-btn radio-btn">
+              <input id="radio2" type="radio" name="radio" value="2">
+              <label class="btn btn--sm" for="radio2"><span>Team 2</span> </label>
+            </div>
+            <div class="form__radio-btn radio-btn">
+              <input id="radio3" type="radio" name="radio" value="3">
+              <label class="btn" for="radio3"><span>Team 3</span></label>
+            </div>
+          </form>
+          <!-- /.radio -->
+          <div class="team__desc">
+            <h3 class="team__desc-title">About</h3>
+            <p class="team__desc-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed
+              eget. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Fusce nullam ac sed eget. Dui in eget
+              a tristique.</p>
+          </div>
+        </div>
+        <!-- /.team__wrapper -->
+      </div>
+      <div class="team__popup popup">
+        <button class="popup__close">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="09121F" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 14.1146L22.6 7.51465L24.4853 9.39998L17.8853 16L24.4853 22.6L22.6 24.4853L16 17.8853L9.39998 24.4853L7.51465 22.6L14.1146 16L7.51465 9.39998L9.39998 7.51465L16 14.1146Z" fill="09121F"/>
+            </svg>
+        </button>
+        <div class="popup__profile">
+          <div class="popup__main-info">
+            <div class="popup__photo">
+              <img src="img/team/teammate-popup.jpg" alt="photo">
+            </div>
+            <div class="popup__content">
+              <div class="popup__cats">
+                <div class="popup__row">
+                  <p>Name</p>
+                  <span>John Dou</span>
+                </div>
+                <div class="popup__row">
+                  <p>Position</p>
+                  <span>Front-End</span>
+                </div>
+                <div class="popup__row">
+                  <p>Email</p>
+                  <a href="mailto:username@mail.com">username@mail.com</a>
+                </div>
+                <div class="popup__row">
+                  <p>Phone</p>
+                  <a href="tel:+3125789075">+3125789075</a>
+                </div>
+              </div>
+              <ul class="social__list popup__social">
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17.5 23.75H23.75V6.25H6.25V23.75H15V17.5H12.5V15H15V12.9325C15 11.2612 15.175 10.655 15.5 10.0437C15.8201 9.43898 16.315 8.94461 16.92 8.625C17.3975 8.36875 17.9912 8.215 19.0287 8.14875C19.44 8.1225 19.9725 8.155 20.6262 8.24875V10.6237H20C18.8538 10.6237 18.38 10.6775 18.0975 10.8288C17.9289 10.9154 17.7917 11.0527 17.705 11.2213C17.555 11.5038 17.5 11.7838 17.5 12.9313V15H20.625L20 17.5H17.5V23.75ZM5 3.75H25C25.3315 3.75 25.6495 3.8817 25.8839 4.11612C26.1183 4.35054 26.25 4.66848 26.25 5V25C26.25 25.3315 26.1183 25.6495 25.8839 25.8839C25.6495 26.1183 25.3315 26.25 25 26.25H5C4.66848 26.25 4.35054 26.1183 4.11612 25.8839C3.8817 25.6495 3.75 25.3315 3.75 25V5C3.75 4.66848 3.8817 4.35054 4.11612 4.11612C4.35054 3.8817 4.66848 3.75 5 3.75V3.75Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M19.125 6.93752C18.175 6.93736 17.2629 7.31017 16.5849 7.97573C15.907 8.64129 15.5174 9.54639 15.5 10.4963L15.465 12.465C15.463 12.5707 15.4386 12.6748 15.3935 12.7704C15.3484 12.866 15.2836 12.9511 15.2033 13.0199C15.1231 13.0887 15.0292 13.1398 14.9278 13.1697C14.8264 13.1997 14.7198 13.2079 14.615 13.1938L12.6638 12.9288C10.0963 12.5788 7.63627 11.3963 5.27627 9.43002C4.52877 13.5675 5.98877 16.4338 9.50502 18.645L11.6888 20.0175C11.7925 20.0827 11.8787 20.1724 11.9398 20.2786C12.0009 20.3848 12.0351 20.5044 12.0393 20.6269C12.0435 20.7493 12.0176 20.871 11.9639 20.9811C11.9102 21.0913 11.8303 21.1866 11.7313 21.2588L9.74127 22.7125C10.925 22.7863 12.0488 22.7338 12.9813 22.5488C18.8788 21.3713 22.8 16.9338 22.8 9.61377C22.8 9.01627 21.535 6.93752 19.125 6.93752ZM13 10.45C13.0218 9.24508 13.3986 8.07336 14.0832 7.08155C14.7678 6.08974 15.7298 5.32192 16.8487 4.87423C17.9676 4.42654 19.1937 4.31887 20.3735 4.56471C21.5532 4.81054 22.6343 5.39895 23.4813 6.25627C24.37 6.25002 25.1263 6.47502 26.8175 5.45002C26.3988 7.50002 26.1925 8.39002 25.3 9.61377C25.3 19.1663 19.4288 23.8113 13.4713 25C9.38627 25.815 3.44627 24.4763 1.74377 22.6988C2.61127 22.6313 6.13627 22.2525 8.17377 20.7613C6.45002 19.625 -0.411226 15.5875 4.09752 4.73252C6.21377 7.20377 8.36002 8.88627 10.535 9.77877C11.9825 10.3725 12.3375 10.36 13.0013 10.4513L13 10.45Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 3.75H25C25.3315 3.75 25.6495 3.8817 25.8839 4.11612C26.1183 4.35054 26.25 4.66848 26.25 5V25C26.25 25.3315 26.1183 25.6495 25.8839 25.8839C25.6495 26.1183 25.3315 26.25 25 26.25H5C4.66848 26.25 4.35054 26.1183 4.11612 25.8839C3.8817 25.6495 3.75 25.3315 3.75 25V5C3.75 4.66848 3.8817 4.35054 4.11612 4.11612C4.35054 3.8817 4.66848 3.75 5 3.75V3.75ZM6.25 6.25V23.75H23.75V6.25H6.25ZM9.375 11.25C8.87772 11.25 8.40081 11.0525 8.04917 10.7008C7.69754 10.3492 7.5 9.87228 7.5 9.375C7.5 8.87772 7.69754 8.40081 8.04917 8.04917C8.40081 7.69754 8.87772 7.5 9.375 7.5C9.87228 7.5 10.3492 7.69754 10.7008 8.04917C11.0525 8.40081 11.25 8.87772 11.25 9.375C11.25 9.87228 11.0525 10.3492 10.7008 10.7008C10.3492 11.0525 9.87228 11.25 9.375 11.25V11.25ZM8.125 12.5H10.625V21.875H8.125V12.5ZM15 13.0375C15.73 12.3313 16.5825 11.875 17.5 11.875C20.0888 11.875 21.875 13.9737 21.875 16.5625V21.875H19.375V16.5625C19.375 15.9823 19.1445 15.4259 18.7343 15.0157C18.3241 14.6055 17.7677 14.375 17.1875 14.375C16.6073 14.375 16.0509 14.6055 15.6407 15.0157C15.2305 15.4259 15 15.9823 15 16.5625V21.875H12.5V12.5H15V13.0375Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a class="social__link" href="#">
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M15 11.25C14.0054 11.25 13.0516 11.6451 12.3483 12.3483C11.6451 13.0516 11.25 14.0054 11.25 15C11.25 15.9946 11.6451 16.9484 12.3483 17.6517C13.0516 18.3549 14.0054 18.75 15 18.75C15.9946 18.75 16.9484 18.3549 17.6517 17.6517C18.3549 16.9484 18.75 15.9946 18.75 15C18.75 14.0054 18.3549 13.0516 17.6517 12.3483C16.9484 11.6451 15.9946 11.25 15 11.25ZM15 8.75C16.6576 8.75 18.2473 9.40848 19.4194 10.5806C20.5915 11.7527 21.25 13.3424 21.25 15C21.25 16.6576 20.5915 18.2473 19.4194 19.4194C18.2473 20.5915 16.6576 21.25 15 21.25C13.3424 21.25 11.7527 20.5915 10.5806 19.4194C9.40848 18.2473 8.75 16.6576 8.75 15C8.75 13.3424 9.40848 11.7527 10.5806 10.5806C11.7527 9.40848 13.3424 8.75 15 8.75ZM23.125 8.4375C23.125 8.8519 22.9604 9.24933 22.6674 9.54235C22.3743 9.83538 21.9769 10 21.5625 10C21.1481 10 20.7507 9.83538 20.4576 9.54235C20.1646 9.24933 20 8.8519 20 8.4375C20 8.0231 20.1646 7.62567 20.4576 7.33265C20.7507 7.03962 21.1481 6.875 21.5625 6.875C21.9769 6.875 22.3743 7.03962 22.6674 7.33265C22.9604 7.62567 23.125 8.0231 23.125 8.4375ZM15 5C11.9075 5 11.4025 5.00875 9.96375 5.0725C8.98375 5.11875 8.32625 5.25 7.71625 5.4875C7.17375 5.6975 6.7825 5.94875 6.36625 6.36625C5.97501 6.74425 5.67419 7.20573 5.48625 7.71625C5.24875 8.32875 5.1175 8.985 5.0725 9.96375C5.0075 11.3438 5 11.8263 5 15C5 18.0925 5.00875 18.5975 5.0725 20.0362C5.11875 21.015 5.25 21.6737 5.48625 22.2825C5.69875 22.8263 5.94875 23.2175 6.36375 23.6325C6.785 24.0525 7.17625 24.3037 7.71375 24.5112C8.33125 24.75 8.98875 24.8825 9.96375 24.9275C11.3438 24.9925 11.8263 25 15 25C18.0925 25 18.5975 24.9912 20.0362 24.9275C21.0138 24.8812 21.6725 24.75 22.2825 24.5138C22.8237 24.3025 23.2175 24.0513 23.6325 23.6362C24.0538 23.215 24.305 22.8238 24.5125 22.2863C24.75 21.67 24.8825 21.0112 24.9275 20.0362C24.9925 18.6562 25 18.1737 25 15C25 11.9075 24.9912 11.4025 24.9275 9.96375C24.8812 8.98625 24.75 8.32625 24.5125 7.71625C24.3241 7.20625 24.0238 6.74495 23.6337 6.36625C23.2559 5.97481 22.7944 5.67396 22.2837 5.48625C21.6712 5.24875 21.0138 5.1175 20.0362 5.0725C18.6562 5.0075 18.1737 5 15 5ZM15 2.5C18.3962 2.5 18.82 2.5125 20.1525 2.575C21.4837 2.6375 22.39 2.84625 23.1875 3.15625C24.0125 3.47375 24.7075 3.90375 25.4025 4.5975C26.0381 5.22237 26.5299 5.97824 26.8438 6.8125C27.1525 7.60875 27.3625 8.51625 27.425 9.8475C27.4838 11.18 27.5 11.6038 27.5 15C27.5 18.3962 27.4875 18.82 27.425 20.1525C27.3625 21.4837 27.1525 22.39 26.8438 23.1875C26.5308 24.0222 26.0389 24.7783 25.4025 25.4025C24.7775 26.0379 24.0216 26.5297 23.1875 26.8438C22.3912 27.1525 21.4837 27.3625 20.1525 27.425C18.82 27.4838 18.3962 27.5 15 27.5C11.6038 27.5 11.18 27.4875 9.8475 27.425C8.51625 27.3625 7.61 27.1525 6.8125 26.8438C5.97791 26.5306 5.22191 26.0387 4.5975 25.4025C3.96176 24.7777 3.46991 24.0218 3.15625 23.1875C2.84625 22.3912 2.6375 21.4837 2.575 20.1525C2.51625 18.82 2.5 18.3962 2.5 15C2.5 11.6038 2.5125 11.18 2.575 9.8475C2.6375 8.515 2.84625 7.61 3.15625 6.8125C3.46905 5.97772 3.961 5.22165 4.5975 4.5975C5.22209 3.96154 5.97804 3.46966 6.8125 3.15625C7.61 2.84625 8.515 2.6375 9.8475 2.575C11.18 2.51625 11.6038 2.5 15 2.5Z"
+                        fill="white" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="popup__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nullam ac sed eget.
+            Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Dui in eget a tristique. Curabitur massa nec non egestas nisl. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. </div>
+        </div>
+      </div>
+      <!-- /.container team__container -->
+      <div class="team__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="team__slide">
+              <div class="team__photo">
+                <img src="img/team/teammate1.jpg" alt="team1">
+                <div class="team__content">
+                  <h3 class="team__name">John Dou</h3>
+                  <span class="team__proff">Front-End</span>
+                  <a class="team__link btn btn--md" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__slide">
+              <div class="team__photo">
+                <img src="img/team/teammate2.jpg" alt="team2">
+                <div class="team__content">
+                  <h3 class="team__name">John Dou</h3>
+                  <span class="team__proff">Front-End</span>
+                  <a class="team__link btn btn--md" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__slide">
+              <div class="team__photo">
+                <img src="img/team/teammate3.jpg" alt="team3">
+                <div class="team__content">
+                  <h3 class="team__name">John Dou</h3>
+                  <span class="team__proff">Front-End</span>
+                  <a class="team__link btn btn--md" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__slide">
+              <div class="team__photo">
+                <img src="img/team/teammate4.jpg" alt="team4">
+                <div class="team__content">
+                  <h3 class="team__name">John Dou</h3>
+                  <span class="team__proff">Front-End</span>
+                  <a class="team__link btn btn--md" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__slide">
+              <div class="team__photo">
+                <img src="img/team/teammate2.jpg" alt="team2">
+                <div class="team__content">
+                  <h3 class="team__name">John Dou</h3>
+                  <span class="team__proff">Front-End</span>
+                  <a class="team__link btn btn--md" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__slide">
+              <div class="team__photo">
+                <img src="img/team/teammate1.jpg" alt="team1">
+                <div class="team__content">
+                  <h3 class="team__name">John Dou</h3>
+                  <span class="team__proff">Front-End</span>
+                  <a class="team__link btn btn--md" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="team__slide">
+              <div class="team__photo">
+                <img src="img/team/teammate3.jpg" alt="team3">
+                <div class="team__content">
+                  <h3 class="team__name">John Dou</h3>
+                  <span class="team__proff">Front-End</span>
+                  <a class="team__link btn btn--md" href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-buttons">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </section>
+    <!-- /#team.team -->
+
+    <section class="contact" id="contact">
+      <img class="contact__ico" src="img/contact/bg-bottom.svg" alt="bg bottom">
+      <div class="container contact__container">
+        <h2 class="section__title contact__title section__title--mb">Contact us</h2>
+        <form class="form contact__form" action="#" method="post">
+          <div class="form__body">
+            <label class="form__label" for="name">
+              <input class="form__input" name="name" id="name" type="text" placeholder="Your name" required>
+            </label>
+            <label class="form__label" for="address">
+              <input class="form__input" name="address" id="address" type="text" placeholder="Your address" required>
+            </label>
+            <label class="form__label" for="phone">
+              <input class="form__input" name="phone" id="phone" type="tel" placeholder="Your phone" required>
+            </label>
+            <label class="form__label form-select" for="form-select">
+              <select class="select" name="form-select" id="form-select">
+                <option class="select__item" value="Choose your job type" selected>
+                  Choose your job type
+                </option>
+                <option class="select__item" value="Designer">
+                  Designer
+                </option>
+                <option class="select__item" value="Front">
+                  Front
+                </option>
+                <option class="select__item" value="Back">
+                  Back
+                </option>
+              </select>
+              <span></span>
+            </label>
+            <label class="form__label form__label--textarea" for="message">
+              <textarea class="form__input form__textarea" name="message" id="message" placeholder="Message"></textarea>
+            </label>
+          </div>
+          <div class="form__actions">
+            <label class="form__file-label" for="file">
+              <button class="btn form__file"><img src="img/contact/upload.svg" alt="upload">Upload CV</button>
+            </label>
+            <input class="btn form__submit" type="submit" value="Submit">
+          </div>
+        </form>
+        <!-- /.form contact__form -->
+      </div>
+      <!-- /.container contact__container -->
+    </section>
+    <!-- /#contact.contact -->
+
+  </main>
+  <!-- /.main -->
+
+  <footer class="footer" id="footer">
+    <div class="container footer__container">
+      <h2 class="footer__title section__title section__title--white section__title--mb">Where You Can Find Us?</h2>
+      <!-- /.footer__title section__title section__title--white section__title--mb -->
+      <div class="footer__inner">
+        <div class="footer__item">
+          <h3 class="footer__item-caption">Office 1</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-unit">
+              <img src="img/footer/map-pin.svg" alt="map-pin">
+              Lasnamae linnaosa, Pae tn 25-47
+            </li>
+            <li class="footer__item-unit">
+              <a class="footer__item-link" href="mailto:username@mail.com">
+                <img src="img/footer/mail.svg" alt="mail">
+                username@mail.com
+              </a>
+            </li>
+            <li class="footer__item-unit">
+              <a class="footer__item-link" href="tel:+3125789075">
+                <img src="img/footer/phone.svg" alt="phone">
+                +3125789075
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__item-caption">Office 2</h3>
+          <ul class="footer__item-list">
+            <li class="footer__item-unit">
+              <img src="img/footer/map-pin.svg" alt="map-pin">
+              Lasnamae linnaosa, Pae tn 22-47
+            </li>
+            <li class="footer__item-unit">
+              <a class="footer__item-link" href="mailto:username@mail.com">
+                <img src="img/footer/mail.svg" alt="mail">
+                username@mail.com
+              </a>
+            </li>
+            <li class="footer__item-unit">
+              <a class="footer__item-link" href="tel:+3125789075">
+                <img src="img/footer/phone.svg" alt="phone">
+                +3125789075
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <h3 class="footer__item-caption">Social</h3>
+          <ul class="social__list footer__social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M17.5 23.75H23.75V6.25H6.25V23.75H15V17.5H12.5V15H15V12.9325C15 11.2612 15.175 10.655 15.5 10.0437C15.8201 9.43898 16.315 8.94461 16.92 8.625C17.3975 8.36875 17.9912 8.215 19.0287 8.14875C19.44 8.1225 19.9725 8.155 20.6262 8.24875V10.6237H20C18.8538 10.6237 18.38 10.6775 18.0975 10.8288C17.9289 10.9154 17.7917 11.0527 17.705 11.2213C17.555 11.5038 17.5 11.7838 17.5 12.9313V15H20.625L20 17.5H17.5V23.75ZM5 3.75H25C25.3315 3.75 25.6495 3.8817 25.8839 4.11612C26.1183 4.35054 26.25 4.66848 26.25 5V25C26.25 25.3315 26.1183 25.6495 25.8839 25.8839C25.6495 26.1183 25.3315 26.25 25 26.25H5C4.66848 26.25 4.35054 26.1183 4.11612 25.8839C3.8817 25.6495 3.75 25.3315 3.75 25V5C3.75 4.66848 3.8817 4.35054 4.11612 4.11612C4.35054 3.8817 4.66848 3.75 5 3.75V3.75Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M19.125 6.93752C18.175 6.93736 17.2629 7.31017 16.5849 7.97573C15.907 8.64129 15.5174 9.54639 15.5 10.4963L15.465 12.465C15.463 12.5707 15.4386 12.6748 15.3935 12.7704C15.3484 12.866 15.2836 12.9511 15.2033 13.0199C15.1231 13.0887 15.0292 13.1398 14.9278 13.1697C14.8264 13.1997 14.7198 13.2079 14.615 13.1938L12.6638 12.9288C10.0963 12.5788 7.63627 11.3963 5.27627 9.43002C4.52877 13.5675 5.98877 16.4338 9.50502 18.645L11.6888 20.0175C11.7925 20.0827 11.8787 20.1724 11.9398 20.2786C12.0009 20.3848 12.0351 20.5044 12.0393 20.6269C12.0435 20.7493 12.0176 20.871 11.9639 20.9811C11.9102 21.0913 11.8303 21.1866 11.7313 21.2588L9.74127 22.7125C10.925 22.7863 12.0488 22.7338 12.9813 22.5488C18.8788 21.3713 22.8 16.9338 22.8 9.61377C22.8 9.01627 21.535 6.93752 19.125 6.93752ZM13 10.45C13.0218 9.24508 13.3986 8.07336 14.0832 7.08155C14.7678 6.08974 15.7298 5.32192 16.8487 4.87423C17.9676 4.42654 19.1937 4.31887 20.3735 4.56471C21.5532 4.81054 22.6343 5.39895 23.4813 6.25627C24.37 6.25002 25.1263 6.47502 26.8175 5.45002C26.3988 7.50002 26.1925 8.39002 25.3 9.61377C25.3 19.1663 19.4288 23.8113 13.4713 25C9.38627 25.815 3.44627 24.4763 1.74377 22.6988C2.61127 22.6313 6.13627 22.2525 8.17377 20.7613C6.45002 19.625 -0.411226 15.5875 4.09752 4.73252C6.21377 7.20377 8.36002 8.88627 10.535 9.77877C11.9825 10.3725 12.3375 10.36 13.0013 10.4513L13 10.45Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 3.75H25C25.3315 3.75 25.6495 3.8817 25.8839 4.11612C26.1183 4.35054 26.25 4.66848 26.25 5V25C26.25 25.3315 26.1183 25.6495 25.8839 25.8839C25.6495 26.1183 25.3315 26.25 25 26.25H5C4.66848 26.25 4.35054 26.1183 4.11612 25.8839C3.8817 25.6495 3.75 25.3315 3.75 25V5C3.75 4.66848 3.8817 4.35054 4.11612 4.11612C4.35054 3.8817 4.66848 3.75 5 3.75V3.75ZM6.25 6.25V23.75H23.75V6.25H6.25ZM9.375 11.25C8.87772 11.25 8.40081 11.0525 8.04917 10.7008C7.69754 10.3492 7.5 9.87228 7.5 9.375C7.5 8.87772 7.69754 8.40081 8.04917 8.04917C8.40081 7.69754 8.87772 7.5 9.375 7.5C9.87228 7.5 10.3492 7.69754 10.7008 8.04917C11.0525 8.40081 11.25 8.87772 11.25 9.375C11.25 9.87228 11.0525 10.3492 10.7008 10.7008C10.3492 11.0525 9.87228 11.25 9.375 11.25V11.25ZM8.125 12.5H10.625V21.875H8.125V12.5ZM15 13.0375C15.73 12.3313 16.5825 11.875 17.5 11.875C20.0888 11.875 21.875 13.9737 21.875 16.5625V21.875H19.375V16.5625C19.375 15.9823 19.1445 15.4259 18.7343 15.0157C18.3241 14.6055 17.7677 14.375 17.1875 14.375C16.6073 14.375 16.0509 14.6055 15.6407 15.0157C15.2305 15.4259 15 15.9823 15 16.5625V21.875H12.5V12.5H15V13.0375Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15 11.25C14.0054 11.25 13.0516 11.6451 12.3483 12.3483C11.6451 13.0516 11.25 14.0054 11.25 15C11.25 15.9946 11.6451 16.9484 12.3483 17.6517C13.0516 18.3549 14.0054 18.75 15 18.75C15.9946 18.75 16.9484 18.3549 17.6517 17.6517C18.3549 16.9484 18.75 15.9946 18.75 15C18.75 14.0054 18.3549 13.0516 17.6517 12.3483C16.9484 11.6451 15.9946 11.25 15 11.25ZM15 8.75C16.6576 8.75 18.2473 9.40848 19.4194 10.5806C20.5915 11.7527 21.25 13.3424 21.25 15C21.25 16.6576 20.5915 18.2473 19.4194 19.4194C18.2473 20.5915 16.6576 21.25 15 21.25C13.3424 21.25 11.7527 20.5915 10.5806 19.4194C9.40848 18.2473 8.75 16.6576 8.75 15C8.75 13.3424 9.40848 11.7527 10.5806 10.5806C11.7527 9.40848 13.3424 8.75 15 8.75ZM23.125 8.4375C23.125 8.8519 22.9604 9.24933 22.6674 9.54235C22.3743 9.83538 21.9769 10 21.5625 10C21.1481 10 20.7507 9.83538 20.4576 9.54235C20.1646 9.24933 20 8.8519 20 8.4375C20 8.0231 20.1646 7.62567 20.4576 7.33265C20.7507 7.03962 21.1481 6.875 21.5625 6.875C21.9769 6.875 22.3743 7.03962 22.6674 7.33265C22.9604 7.62567 23.125 8.0231 23.125 8.4375ZM15 5C11.9075 5 11.4025 5.00875 9.96375 5.0725C8.98375 5.11875 8.32625 5.25 7.71625 5.4875C7.17375 5.6975 6.7825 5.94875 6.36625 6.36625C5.97501 6.74425 5.67419 7.20573 5.48625 7.71625C5.24875 8.32875 5.1175 8.985 5.0725 9.96375C5.0075 11.3438 5 11.8263 5 15C5 18.0925 5.00875 18.5975 5.0725 20.0362C5.11875 21.015 5.25 21.6737 5.48625 22.2825C5.69875 22.8263 5.94875 23.2175 6.36375 23.6325C6.785 24.0525 7.17625 24.3037 7.71375 24.5112C8.33125 24.75 8.98875 24.8825 9.96375 24.9275C11.3438 24.9925 11.8263 25 15 25C18.0925 25 18.5975 24.9912 20.0362 24.9275C21.0138 24.8812 21.6725 24.75 22.2825 24.5138C22.8237 24.3025 23.2175 24.0513 23.6325 23.6362C24.0538 23.215 24.305 22.8238 24.5125 22.2863C24.75 21.67 24.8825 21.0112 24.9275 20.0362C24.9925 18.6562 25 18.1737 25 15C25 11.9075 24.9912 11.4025 24.9275 9.96375C24.8812 8.98625 24.75 8.32625 24.5125 7.71625C24.3241 7.20625 24.0238 6.74495 23.6337 6.36625C23.2559 5.97481 22.7944 5.67396 22.2837 5.48625C21.6712 5.24875 21.0138 5.1175 20.0362 5.0725C18.6562 5.0075 18.1737 5 15 5ZM15 2.5C18.3962 2.5 18.82 2.5125 20.1525 2.575C21.4837 2.6375 22.39 2.84625 23.1875 3.15625C24.0125 3.47375 24.7075 3.90375 25.4025 4.5975C26.0381 5.22237 26.5299 5.97824 26.8438 6.8125C27.1525 7.60875 27.3625 8.51625 27.425 9.8475C27.4838 11.18 27.5 11.6038 27.5 15C27.5 18.3962 27.4875 18.82 27.425 20.1525C27.3625 21.4837 27.1525 22.39 26.8438 23.1875C26.5308 24.0222 26.0389 24.7783 25.4025 25.4025C24.7775 26.0379 24.0216 26.5297 23.1875 26.8438C22.3912 27.1525 21.4837 27.3625 20.1525 27.425C18.82 27.4838 18.3962 27.5 15 27.5C11.6038 27.5 11.18 27.4875 9.8475 27.425C8.51625 27.3625 7.61 27.1525 6.8125 26.8438C5.97791 26.5306 5.22191 26.0387 4.5975 25.4025C3.96176 24.7777 3.46991 24.0218 3.15625 23.1875C2.84625 22.3912 2.6375 21.4837 2.575 20.1525C2.51625 18.82 2.5 18.3962 2.5 15C2.5 11.6038 2.5125 11.18 2.575 9.8475C2.6375 8.515 2.84625 7.61 3.15625 6.8125C3.46905 5.97772 3.961 5.22165 4.5975 4.5975C5.22209 3.96154 5.97804 3.46966 6.8125 3.15625C7.61 2.84625 8.515 2.6375 9.8475 2.575C11.18 2.51625 11.6038 2.5 15 2.5Z"
+                    fill="white" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <a class="footer__privacy privacy" href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <!-- /.footer__inner -->
+    </div>
+    <!-- /.container footer__container -->
+  </footer>
+  <!-- /.footer -->
+
+  <div class="overlay"></div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

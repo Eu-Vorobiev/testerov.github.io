@@ -1,0 +1,46 @@
+.header {
+  position: fixed;
+  top: 0px;
+  padding: 25px 0 12px;
+  z-index: 10;
+  width: 100%;
+  background: $dark;
+  transition: $transition;
+
+  @media screen and (max-width: 768px) {
+    padding: 12px 0;
+  }
+
+  &--scrolled {
+    padding: 12px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+
+    @media screen and (max-width: 575px) {
+      max-width: 110px;
+    }
+  }
+
+  .menu-btn {
+    position: relative;
+    z-index: 10;
+  }
+
+  &__privacy {
+    margin-top: 25px;
+    font-style: normal;
+    font-size: rem(16);
+    line-height: divider(18, 16);
+  }
+}

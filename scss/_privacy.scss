@@ -1,0 +1,15 @@
+.privacy {
+  font-size: rem(18);
+  line-height: divider(21, 18);
+  color: #B1B1B1;
+  text-transform: capitalize;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 575px) {
+    font-weight: 300;
+    font-size: rem(16);
+  }
+}

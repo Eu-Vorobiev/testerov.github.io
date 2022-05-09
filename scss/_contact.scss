@@ -1,0 +1,50 @@
+.contact {
+  padding: 110px 0 280px;
+  background: $lightGray url("../img/contact/bg-right.svg");
+  background-repeat: no-repeat;
+  background-position: 115% center;
+  background-size: contain;
+  background-color: $lightGray;
+  position: relative;
+
+  &__ico {
+    position: absolute;
+    bottom: 3%;
+    left: calc((100vw - 1800px) / 2 - 2%);
+    z-index: 1;
+
+    @media screen and (max-width: 1400px) {
+      left: 1%;
+    }
+
+    @media screen and (max-width: 991px) {
+      max-width: 30%;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    background-position: 140% center;
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 80px 0 150px;
+  }
+
+  @media screen and (max-width: 768px) {
+    background-size: 150%;
+    background-position: right 100% center;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding: 50px 0 50px;
+  }
+
+  &__form {
+    position: relative;
+    z-index: 4;
+  }
+}

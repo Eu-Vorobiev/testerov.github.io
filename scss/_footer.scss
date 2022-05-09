@@ -1,0 +1,142 @@
+.footer {
+  padding: 75px 0;
+  display: flex;
+  flex: 0 1 auto;
+  background: $dark;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('../img/footer/bg-frame.svg');
+    background-position: right -20px center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 50px percent(400, 1820) 50px 20px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+      background-image: none;
+    }
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(rem(340), 1fr));
+    gap: rem(80) rem(60);
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(rem(270), 1fr));
+      gap: rem(30);
+    }
+
+    @media screen and (max-width: 575px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &-caption {
+      align-self: start;
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: clamp(rem(20), 4vw, rem(30));
+      line-height: divider(34, 30);
+      color: $white;
+      position: relative;
+
+      @media screen and (max-width: 575px) {
+        margin-bottom: 20px;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 130px;
+        background: $red;
+        border-radius: 4px;
+
+        @media screen and (max-width: 575px) {
+          width: 90px;
+        }
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: rem(15);
+
+      @media screen and (max-width: 575px) {
+        gap: rem(12);
+      }
+    }
+
+    &-unit,
+    &-link {
+      display: flex;
+      align-items: center;
+      font-weight: normal;
+      font-size: rem(20);
+      line-height: divider(23, 20);
+      color: $white;
+
+      img {
+        width: 24px;
+        height: 24px;
+        margin-right: 15px;
+
+        @media screen and (max-width: 575px) {
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+        }
+      }
+
+      @media screen and (max-width: 575px) {
+        font-weight: 300;
+        font-size: rem(16);
+      }
+    }
+
+    &-link {
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  &__social {
+    margin-bottom: 30px;
+
+
+    @media screen and (max-width: 575px) {
+      margin-bottom: 18px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    svg {
+
+      path {
+        fill: $red;
+      }
+    }
+  }
+
+  &__privacy {
+    align-self: start;
+  }
+}

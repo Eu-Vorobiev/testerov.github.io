@@ -1,0 +1,165 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  scroll-padding-top: $headerHeight;
+
+  ::selection,
+  ::-moz-selection {
+    background-color: $red;
+    color: $white;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: $red $black;
+
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $black;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $red;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font;
+  background: $dark;
+  min-height: 100vh;
+  transition: $transition;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  &.page {
+    @include pageFlex;
+  }
+}
+
+main {
+  flex: 1 0 auto;
+}
+article {
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+span {
+  display: inline-flex;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-flex;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  transition: $transition;
+}
+
+button,
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  font-family: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  transition: $transition;
+}
+
+.container {
+  width: 100%;
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  &__title {
+    font-size: clamp(rem(24), 5vw, rem(54));
+    line-height: divider(62, 54);
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $black;
+
+    &--white {
+      color: $white;
+    }
+
+    &--mb {
+      margin-bottom: 90px;
+
+      @media screen and (max-width: 1024px) {
+        margin-bottom: 60px;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 45px;
+      }
+
+      @media screen and (max-width: 575px) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.logo {
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 15;
+  background: rgba($dark, .9);
+  transition: $transition;
+  opacity: 0;
+  transform: translateY(100%);
+  visibility: hidden;
+
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+}

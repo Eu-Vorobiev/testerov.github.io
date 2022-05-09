@@ -1,0 +1,16 @@
+@mixin pageFlex {
+  display: flex;
+  flex-direction: column;
+}
+
+@function rem($val) {
+  @return $val / 16+rem;
+}
+
+@function divider($val, $font-size) {
+  @return $val / $font-size;
+}
+
+@function percent($currentValue, $totalValue) {
+  @return ($currentValue / $totalValue) * 100%;
+}

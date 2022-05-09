@@ -1,0 +1,26 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  padding: 18px 0;
+  border: 1px solid transparent;
+  border-radius: rem(36);
+  flex: 0 1 rem(285);
+  font-size: clamp(rem(20), 4vw, rem(24));
+  line-height: 1;
+  text-transform: capitalize;
+  color: #FBFBFB;
+
+  &--md {
+    flex: 0 1 rem(265);
+  }
+
+  &--transparent {
+    background: transparent;
+    border: 1px solid $white;
+
+    &:hover {
+      background: rgba($red, .7);
+      border-color: rgba($red, .7);
+    }
+  }
+}
